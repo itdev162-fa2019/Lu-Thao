@@ -1,11 +1,67 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Persistence.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Persistence/Persistence.csproj",
+      "msbuildProject": "../Persistence/Persistence.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lunat\\.nuget\\packages\\": {},
@@ -14,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\API\\API.csproj",
+      "projectUniqueName": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\API\\API.csproj",
+      "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\API\\API.csproj",
       "packagesPath": "C:\\Users\\lunat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\API\\obj\\",
+      "outputPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -36,7 +92,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Application\\Application.csproj": {
+              "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Application\\Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

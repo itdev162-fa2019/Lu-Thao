@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -171,10 +181,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Domain >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -185,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\lunat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\obj\\",
+      "outputPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -207,7 +223,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

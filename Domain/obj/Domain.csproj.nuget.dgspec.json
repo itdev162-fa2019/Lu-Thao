@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {}
+    "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
+    "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
+        "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\lunat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\obj\\",
+        "outputPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
