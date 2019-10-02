@@ -4,6 +4,7 @@ C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\bin\Debug\netstandard2.0\P
 C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\bin\Debug\netstandard2.0\Domain.dll
 C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\bin\Debug\netstandard2.0\Domain.pdb
 C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\obj\Debug\netstandard2.0\Persistence.csprojAssemblyReference.cache
+C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CoreCompileInputs.cache
 C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfoInputs.cache
 C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\obj\Debug\netstandard2.0\Persistence.AssemblyInfo.cs
 C:\Users\lunat\code\matc\itdev162\Lu-Thao\Persistence\obj\Debug\netstandard2.0\Persistence.csproj.CopyComplete
