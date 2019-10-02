@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
+    "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\lunat\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -49,27 +49,21 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     },
-    "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\lunat\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -88,8 +82,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj"
+              "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\lunat\\code\\matc\\itdev162\\Lu-Thao\\Domain\\Domain.csproj"
               }
             }
           }
@@ -111,16 +105,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
