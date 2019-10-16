@@ -4,7 +4,7 @@ import axios from 'axios';
 
 class App extends React.Component {
   state = {
-    posts: []
+    values: []
   }
 
   componentDidMount() {
@@ -20,21 +20,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { posts } = this.state;
-
     return (
       <div className="App">
         <header className="App-header">
           BlogBox
         </header>
-        <main className="App-content">
-          {posts.map((post: any) =>
-            <div key={post.id}>
-              <h1>{post.title}</h1>
-              <p>{post.body}</p>
-            </div>
-          )}
-        </main>
+          {this.state.values.map((value: any) => <div key={value}>{value}</div>)}
       </div>
     );
   }
