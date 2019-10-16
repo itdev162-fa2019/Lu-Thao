@@ -9,7 +9,7 @@ namespace Persistence.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Posts",
-                columns: table => new 
+                columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Title = table.Column<string>(nullable: true),
@@ -20,14 +20,12 @@ namespace Persistence.Migrations
                 {
                     table.PrimaryKey("PK_Posts", x => x.Id);
                 });
-
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Posts"
-            );
+                name: "Posts");
         }
     }
 }
