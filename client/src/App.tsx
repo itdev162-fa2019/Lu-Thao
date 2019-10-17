@@ -27,7 +27,7 @@ class App extends React.Component {
         <header className="App-header">
           BlogBox
         </header>
-        <main className="App-content">
+        <main>
           {posts.map((post: any) =>
             <div key={post.id}>
               <h1>{post.title}</h1>
