@@ -65,7 +65,6 @@ namespace API.Controllers
 
             throw new Exception("Error creating post");
         }
-
         ///<summary>
         ///PUT api/put
         ///</summary>
@@ -75,7 +74,7 @@ namespace API.Controllers
         public ActionResult<Post> Update([FromBody]Post request)
         {
             var post = context.Posts.Find(request.Id);
-           
+
             if (request == null)
             {
                 throw new Exception("could not find post");
@@ -86,7 +85,7 @@ namespace API.Controllers
             post.Body = request.Body != null ? request.Body : post.Body;
             post.Date = request.Date != null ? request.Date : post.Date;
 
-            var success = context.SaveChanges() >0;
+            var success = context.SaveChanges() > 0;
 
             if (success)
             {
@@ -95,7 +94,6 @@ namespace API.Controllers
 
             throw new Exception("error updating post");
         }
-
 
     }
 }
