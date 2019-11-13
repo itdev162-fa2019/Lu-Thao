@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import PostList from './components/PostList/PostList';
+import Post from './components/Post/Post';
+
 
 class App extends React.Component {
   state = {
-    posts:[]
+    posts:[],
+    post: null
   }
 
   componentDidMount() {
@@ -19,23 +24,34 @@ class App extends React.Component {
     })
   }
 
+  viewPost = (post) => {
+    console.log(`view ${post.title}`);
+    this.setState({
+      post: post
+    });
+  }
+
   render(){
-    const {posts} = this.state;
+    const {posts, post} = this.state;
 
     return (
-      <div className="App">
-        <header className="App-header">
-          BlogBox
-        </header>
-        <main>
-          {posts.map((post:any) =>
-            <div key={post.id}>
-              <h1>{post.title}</h1>
-              <p>{post.body}</p>
-            </div>
-            )}
-        </main>
-      </div>
+      <Router>
+        <div className="App">
+          <header className="App-header">
+            BlogBox
+          </header>
+          <main className="App-content">
+            <Switch>
+              <Router exact path="/">
+                <PostList posts={posts} clickPost={this.viewPost} />
+              </Router>
+              <Router path="/posts/:postId">
+                <Post post={post} />
+              </Router>
+            </Switch>
+          </main>
+        </div>
+      </Router>
     );
   }
 }
