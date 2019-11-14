@@ -5,10 +5,10 @@ import style from './styles.css';
 
 const PostListItem = props => {
     const { post, clickPost } = props;
-    const history = useHistroy();
+    const history = useHistory();
 
     const handleClickPost = post => {
-        const slug = slugify(post.title, { lower:true});
+        const slug = slugify(post.title, { lower: true});
 
         clickPost(post);
         history.push(`/posts/${slug}`);
