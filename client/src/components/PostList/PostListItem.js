@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import slugify from 'slugify';
-import style from './styles.css';
+//import style from './styles.css';
 
 const PostListItem = props => {
     const { post, clickPost, deletePost } = props;
