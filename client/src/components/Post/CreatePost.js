@@ -4,6 +4,7 @@ import uuid from 'uuid';
 import moment from 'moment';
 import { useHistory } from 'react-router-dom';
 import './styles.css';
+import { create } from 'domain';
 
 const CreatePost = ({onPostData}) => {
     let history = useHistory();
@@ -11,7 +12,7 @@ const CreatePost = ({onPostData}) => {
         title:'',
         body:''
     });
-    cost {title,body} = postData;
+    const {title, body} = postData;
 
     const onChange = e => {
         const { name, value } = e.target;
@@ -24,7 +25,7 @@ const CreatePost = ({onPostData}) => {
     const creat = async => {
         if(!title || !body){
             console.log('title and body are required');
-           }eles {
+           }else {
                const newPost ={
                    id: uuid.v4(),
                    title:title,
@@ -54,4 +55,28 @@ const CreatePost = ({onPostData}) => {
             }
         }
     };
+
+    return (
+        <div className="from-container">
+            <h2>Create New Post</h2>
+            <input
+                name="title"
+                type="text"
+                placeholder="title"
+                value={title}
+                onChange={e => onChange(e)}
+            />
+            <textarea
+                name="body"
+                col="30"
+                rows="10"
+                value={body}
+                onChange={e => onChange(e)}
+            ></textarea>
+            <button onClick={() => create()}>Submit</button>
+        </div>
+    );
 };
+
+export default CreatePost;
+
