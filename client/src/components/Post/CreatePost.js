@@ -62,7 +62,7 @@ const CreatePost = ({onPostData}) => {
             <input
                 name="title"
                 type="text"
-                placeholder="title"
+                placeholder="Title"
                 value={title}
                 onChange={e => onChange(e)}
             />
