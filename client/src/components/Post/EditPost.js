@@ -4,7 +4,7 @@ import moment from 'moment';
 import { useHistory } from 'react-router-dom';
 import './styles.css';
 
-const EditPost =({post, onPostUpdate}) =>{
+const EditPost =({post, onPostUpdated}) =>{
     let history = useHistory();
     const [postData, setPostData] = useState({
         title:post.title,
@@ -48,7 +48,7 @@ const EditPost =({post, onPostUpdate}) =>{
                 );
 
 
-                onPostUpdate(res.data);
+                onPostUpdated(res.data);
                 history.push('/');
             }catch (error){
                 console.error(`Error creating post: ${error.response.data}`);
@@ -64,17 +64,18 @@ const EditPost =({post, onPostUpdate}) =>{
             type="text"
             placeholder="Title"
             value={title}
-            onChange={e => onchange(e)}
+            onChange={e => onChange(e)}
             />
             <textarea
             name="body"
             cols="30"
             rows="10"
             value={body}
-            onchange={e => onchange(e)}
+            onchange={e => onChange(e)}
             ></textarea>
+            <button onClick={() => update()}>Submit</button>
         </div>
-    )
+    );
 };
 
 export default EditPost;
